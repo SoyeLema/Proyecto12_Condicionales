@@ -60,24 +60,27 @@ enter.addEventListener("click", function ingresar() {
     const z = pass3.value
     const password = x + y + z
 
-    if (x == 4 && y == 4 && z == 7) {
-        access.innerHTML = "¡ACERTASTE! ACCESO CONCEDIDO :D"
+    if (x == 9 && y == 1 && z == 1) {
+        access.innerHTML = "Has ingresado la password 1 correctamente"
         access.style.color = "white"
         access.style.backgroundColor = "#048c6c"
+
+    } else if (x == 7 && y == 1 && z == 4) {
+        access.innerHTML = "Has ingresado la password 2 correctamente"
+        access.style.color = "white"
+        access.style.backgroundColor = "#048c6c"
+
     } else if (x < 0 || y < 0 || z < 0) {
-        access.innerHTML = "NOP! INTENTA USAR NÚMEROS POSITIVOS"
+        access.innerHTML = "NOP! Intenta usar números positivos"
         access.style.color = "black"
         access.style.backgroundColor = "#e28743"
-    } else if (x == 4 || y == 4 || z == 7) {
-        access.innerHTML = "UFF! ESTÁS CERCA! ACERTASTE UNO O MÁS NÚMEROS!!"
-        access.style.color = "black"
-        access.style.backgroundColor = "#cba467"
+
     } else if (x == 0 && y == 0 && z == 0) {
-        access.innerHTML = "NO ESTÁS INTENTANDO UNA CONTRASEÑA"
+        access.innerHTML = "Password Incorrecto: Debes intentar con números distintos de cero"
         access.style.color = "black"
         access.style.backgroundColor = "#cba467"
     } else {
-        access.innerHTML = "FALLASTE :( ACCESO DENEGADO"
+        access.innerHTML = "Password Incorrecto :("
         access.style.color = "white"
         access.style.backgroundColor = "#9d3532"
 
