@@ -74,6 +74,10 @@ enter.addEventListener("click", function ingresar() {
         access.innerHTML = "UFF! ESTÁS CERCA! ACERTASTE UNO O MÁS NÚMEROS!!"
         access.style.color = "black"
         access.style.backgroundColor = "#cba467"
+    } else if (x == 0 && y == 0 && z == 0) {
+        access.innerHTML = "NO ESTÁS INTENTANDO UNA CONTRASEÑA"
+        access.style.color = "black"
+        access.style.backgroundColor = "#cba467"
     } else {
         access.innerHTML = "FALLASTE :( ACCESO DENEGADO"
         access.style.color = "white"
