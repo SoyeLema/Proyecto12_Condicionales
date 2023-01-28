@@ -63,7 +63,7 @@ body {
 .container-2 h2 {
     color: white;
     font-size: 30px;
-    margin-bottom: 30px;
+    margin: 30px;
 }
 
 .choose {
@@ -108,6 +108,7 @@ button:hover {
     padding: 15px;
     border-radius: 30px;
     transition: .5s;
+    margin: 0;
 }
 
 .container-3 {
@@ -137,4 +138,36 @@ h5 {
     height: 50px;
     text-align: center;
     font-size: 25px;
+}
+
+#access {
+    padding: 15px;
+    border-radius: 30px;
+    transition: .5s;
+    margin: 0;
+}
+
+footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+i {
+    margin: 30px 10px 15px 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+i:hover {
+    color: #f7d61e;
+    transition: .5s;
 }

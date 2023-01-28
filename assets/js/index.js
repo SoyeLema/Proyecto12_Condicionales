@@ -33,7 +33,6 @@ verify.addEventListener("click", function verificar() {
         result.innerHTML = "Por favor introduce un número válido del 0 al 10"
         result.style.color = "black"
         result.style.backgroundColor = "#cba467"
-        result.style.backgroundOpacity = "0"
     } else if (total > 10) {
         result.innerHTML = "No puedes llevar tantos!"
         result.style.color = "white"
@@ -65,12 +64,20 @@ enter.addEventListener("click", function ingresar() {
 
     if (x == 4 && y == 4 && z == 7) {
         access.innerHTML = "¡ACERTASTE! ACCESO CONCEDIDO :D"
+        access.style.color = "white"
+        access.style.backgroundColor = "#048c6c"
     } else if (x < 0 || y < 0 || z < 0) {
         access.innerHTML = "NOP! INTENTA USAR NÚMEROS POSITIVOS"
+        access.style.color = "black"
+        access.style.backgroundColor = "#e28743"
     } else if (x == 4 || y == 4 || z == 7) {
         access.innerHTML = "UFF! ESTÁS CERCA! ACERTASTE UNO O MÁS NÚMEROS!!"
+        access.style.color = "black"
+        access.style.backgroundColor = "#cba467"
     } else {
         access.innerHTML = "FALLASTE :( ACCESO DENEGADO"
+        access.style.color = "white"
+        access.style.backgroundColor = "#9d3532"
 
     }
 
