@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-image: url(/assets/img/dark-green.jpg);
+    background-size: cover;
+}
+
+.divider {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    color: white;
+}
+
+.logo {
+    width: 750px;
+    height: auto;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+.container-1 h2 {
+    color: white;
+    font-size: 30px;
+}
+
+#click {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: transparent;
+    cursor: pointer;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.container-2 h2 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.choose {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.sticker {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.sticker input {
+    height: 30px;
+    text-align: center;
+    font-size: large;
+    margin: 15px;
+}
+
+button {
+    background-color: #ffd900d8;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #00000070;
+    border-radius: 30px;
+    color: #000000b2;
+    font-size: larger;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: #f7d61e;
+    transition: .5s;
+}
+
+#result {
+    padding: 15px;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.container-3 h2,
+h4,
+h5 {
+    color: white;
+    margin: 5px;
+}
+
+.container-3 span {
+    color: #a8140f;
+}
+
+.password {
+    margin: 20px;
+}
+
+.password input {
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+}

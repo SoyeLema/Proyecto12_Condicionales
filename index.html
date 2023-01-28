@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>3 en 1</title>
+</head>
+
+<body>
+    <div class="title">
+        <img class="logo" src="assets/img/eldenring_new.webp" title="LA PASSWORD ES 447" alt="">
+        <h1>¡Bienvenido! Esta es una pequeña página con motivo de Elden Ring</h1>
+    </div>
+
+    <!-- PARTE 1 -->
+    <div class="container-1">
+        <h2>Para comenzar: Haz click en la imagen!</h2>
+        <div class="clickeable">
+            <img src="assets/img/elden-ring.png" alt="" id="click">
+        </div>
+    </div>
+    <!-- /PARTE1 -->
+
+    <div class="divider">
+        <img src="assets/img/elden-ring-border-leaf.png" alt="">
+    </div>
+
+    <!-- PARTE 2 -->
+    <div class="container-2">
+        <h2>Ahora, puedes elegir para llevar un máximo de 10 stickers en total! </h2>
+        <div class="choose">
+            <div class="sticker">
+                <img src="assets/img/sticker-1.png" alt="">
+                <input type="number" id="sticker-1" value="0" min="0" max="10">
+            </div>
+            <div class="sticker">
+                <img src="assets/img/sticker-2.png" alt="">
+                <input type="number" id="sticker-2" value="0" min="0" max="10">
+            </div>
+            <div class="sticker">
+                <img src="assets/img/sticker-3.png" alt="">
+                <input type="number" id="sticker-3" value="0" min="0" max="10">
+            </div>
+        </div>
+        <div class="button">
+            <button class="verify">Verificar</button>
+        </div>
+
+        <h2 id="result"></h2>
+
+    </div>
+    <!-- /PARTE 2 -->
+
+    <div class="divider">
+        <img src="assets/img/elden-ring-border-leaf.png" alt="">
+    </div>
+
+    <!-- PARTE 3 -->
+    <div class="container-3">
+        <h2>Por último...</h2>
+        <h2>Ingresa la <span title="intenta con 447">contraseña </span>correcta</h2>
+        <h4>Hay una <span title="intenta con 447">pista </span>oculta en el encabezado</h4>
+        <h5>Si ya no hay forma que adivines intenta mirando el código fuente o fijando el mouse sobre la pista</h5>
+        <!-- <<<----- LA CONTRASEÑA ES 447 JEJE -->
+        <div class="password">
+            <input id="pass1" type="number" value="0" min="0" max="9">
+            <input id="pass2" type="number" value="0" min="0" max="9">
+            <input id="pass3" type="number" value="0" min="0" max="9">
+        </div>
+
+        <button id="enter">Ingresar</button>
+
+        <h2 id="access"></h2>
+    </div>
+    <!-- /PARTE 3 -->
+
+    <script src="assets/js/index.js"></script>
+
+</body>
+
+</html>
