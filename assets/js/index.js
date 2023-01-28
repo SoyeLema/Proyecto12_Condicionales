@@ -1,33 +1,31 @@
 //PARTE 1
 const image = document.querySelector("#click")
-const none = "transparent"
-const gold = "3px solid gold"
-
 
 image.addEventListener("click", function cambiaColor() {
-    if (image.style.border != gold) {
-        image.style.border = gold
+
+    if (image.style.border == "none") {
+        image.style.border = "3px solid gold"
         image.style.transition = ".5s"
 
     } else {
-        image.style.border = none
+        image.style.border = "none"
     }
 })
 
 
 //PARTE 2
-let input1 = document.querySelector("#sticker-1")
-let input2 = document.querySelector("#sticker-2")
-let input3 = document.querySelector("#sticker-3")
-let result = document.querySelector("#result")
+const input1 = document.querySelector("#sticker-1")
+const input2 = document.querySelector("#sticker-2")
+const input3 = document.querySelector("#sticker-3")
+const result = document.querySelector("#result")
 
 const verify = document.querySelector(".verify")
 
 verify.addEventListener("click", function verificar() {
-    let a = Number(input1.value)
-    let b = Number(input2.value)
-    let c = Number(input3.value)
-    let total = Number(a + b + c)
+    const a = Number(input1.value)
+    const b = Number(input2.value)
+    const c = Number(input3.value)
+    const total = (a + b + c)
 
     if (a < 0 || b < 0 || c < 0) {
         result.innerHTML = "Por favor introduce un número válido del 0 al 10"
@@ -49,18 +47,18 @@ verify.addEventListener("click", function verificar() {
 })
 
 //PARTE 3
-let pass1 = document.querySelector("#pass1")
-let pass2 = document.querySelector("#pass2")
-let pass3 = document.querySelector("#pass3")
-let access = document.querySelector("#access")
+const pass1 = document.querySelector("#pass1")
+const pass2 = document.querySelector("#pass2")
+const pass3 = document.querySelector("#pass3")
+const access = document.querySelector("#access")
 
 const enter = document.querySelector("#enter")
 
 enter.addEventListener("click", function ingresar() {
-    let x = pass1.value
-    let y = pass2.value
-    let z = pass3.value
-    let password = x + y + z
+    const x = pass1.value
+    const y = pass2.value
+    const z = pass3.value
+    const password = x + y + z
 
     if (x == 4 && y == 4 && z == 7) {
         access.innerHTML = "¡ACERTASTE! ACCESO CONCEDIDO :D"
